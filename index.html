@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+  <head>
+    <title>page1</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./animation.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="parent-div">
+      <div class="page1-1-944" id="id-856">
+        <div class="ellipse-1-1-48" id="id-857"></div>
+        <div class="ellipse-5-1-529" id="id-8536"></div>
+        <div class="ellipse-4-1-1155" id="id-97268"></div>
+        <div class="rectangle-41-1-682" id="id-859"></div>
+        <div class="rectangle-24-1-228" id="id-8512"></div>
+        <div class="rectangle-43-1-4100" id="id-9123"></div>
+        <div class="rectangle-42-1-152" id="id-9122"></div>
+        <div class="rectangle-44-1-671" id="id-9124"></div>
+        <div class="rectangle-16-1-320" id="id-8533"></div>
+        <div class="rectangle-36-1-693" id="id-8537"></div>
+        <div class="check-results-b-1-1896" id="id-858">
+          <span class="check-results-b-1-1896-0"
+            >check results before submit</span
+          >
+        </div>
+        <div class="program-code-1-4425" id="id-8510">
+          <span class="program-code-1-4425-0">Program code</span>
+        </div>
+        
+        <form id="submit-form" action="">
+        <div class="c-104-1-1750" id="id-8511">
+          <span class="c-104-1-1750-0"><input type="text" name="program code" class="input" placeholder="PRG384"
+            required></span>
+        </div>
+        <div class="c-20-1-264" id="id-8527">
+          <span class="c-20-1-264-0"><input type="number" name="A" min="0" max="100" class="inputblack" placeholder="000" 
+            required /></span>
+        </div>
+        <div class="c-20-2-2216" id="id-8529">
+          <span class="c-20-2-2216-0"><input type="number" name="B" min="0"
+             max="100" class="inputwhite" placeholder="000" required></span>
+        </div>
+        <div class="c-20-3-1411" id="id-8531">
+          <span class="c-20-3-1411-0"><input type="number" name="C" min="0" max="100" class="inputblack" placeholder="000" 
+            required /></span>
+        </div>
+        <div class="submit-1-475" id="id-8538">
+          <span class="submit-1-475-0"><button type="submit" value="Submit" class="bbb">Submit</button></span>
+          </form>
+        </div>
+
+        <div class="codes-1-192" id="id-8519">
+          <span class="codes-1-192-0">codes</span>
+        </div>
+        <div class="a-1-450" id="id-8521"><span class="a-1-450-0">A</span></div>
+        <div class="b-1-2156" id="id-8523">
+          <span class="b-1-2156-0">B</span>
+        </div>
+        <div class="c-1-610" id="id-8525"><span class="c-1-610-0">C</span></div>
+        <div class="mark-1-1092" id="id-8526">
+          <span class="mark-1-1092-0">mark</span>
+        </div>
+       
+        <div class="dots-make-perfe-1-1116" id="id-8534">
+          <span class="dots-make-perfe-1-1116-0">dots make perfection</span>
+        </div>
+        <div class="judging-point-1-1580" id="id-8535">
+          <span class="judging-point-1-1580-0">JUDGING POINT</span
+          ><span class="judging-point-1-1580-1"> </span>
+        </div>
+        
+        <div class="sar-1layerstyle-1-498" id="id-8539">
+          <div class="vector-1-1350" id="id-8540">
+            <div class="nodeBg-8540" id="id-bg-8540"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+
+    <script>
+      $("#submit-form").submit((e) => {
+        e.preventDefault()
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycby-y-ZxF05B1cpTWpDNWYp_zmCC20Jm5QuOTELoPUZE6nj3YioT2Ynxu2eGSIUPXbBI/exec",
+          data: $("#submit-form").serialize(),
+          method: "post",
+          success: function (response) {
+            alert("Form submitted successfully")
+            //window.location.reload()
+            window.location.href="https://favasee.github.io/sartnx/"
+          },
+          error: function (err) {
+            alert("Something Error")
+  
+          }
+        })
+      })
+    </script>
+
+  </body>
+</html>
